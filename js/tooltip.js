@@ -39,9 +39,17 @@ Tooltip.prototype.onAdd = function () {
 
     // Create the DIV and set some basic attributes.
     var div = document.createElement('DIV');
+    var div_before = document.createElement('DIV');
+
     div.style.position = "absolute";
     // Hide tooltip
     div.style.visibility = "hidden";
+
+    div_before.style.position = "absolute";
+    // Hide tooltip
+    div_before.style.visibility = "hidden";
+
+
     if (this.cssClass_)
         div.className += " " + this.cssClass_;
 
@@ -50,11 +58,13 @@ Tooltip.prototype.onAdd = function () {
 
     // Set the overlay's div_ property to this DIV
     this.div_ = div;
+    this.div_before_ = div_before
 
     // We add an overlay to a map via one of the map's panes.
     // We'll add this overlay to the floatPane pane.
     var panes = this.getPanes();
     panes.floatPane.appendChild(this.div_);
+    panes.floatPane.appendChild(this.div_before_);
 
 }
 // We here implement draw
@@ -70,10 +80,20 @@ Tooltip.prototype.draw = function () {
     // We'll use these coordinates to place the DIV.
     var ne = overlayProjection.fromLatLngToDivPixel(this.marker_.getPosition());
 
+    // console.log(this.marker_.icon.url)
+
     // Position the DIV.
     var div = this.div_;
-    div.style.left = ne.x + 'px';
-    div.style.top = ne.y + 'px';
+    var div_before = this.div_before_;
+
+    div.style.left = (ne.x + 19.5) + 'px';
+    div.style.top = (ne.y - 45) + 'px';
+
+    div_before.style.left = (ne.x + 0.5) + 'px';
+    div_before.style.top = (ne.y - 45) + 'px';
+    div_before.style.width = 19 + 'px';
+    div_before.style.height = 32 + 'px';
+    div_before.style.backgroundImage = "url(images/cover.svg)";
 
 }
 // We here implement onRemove
@@ -85,11 +105,13 @@ Tooltip.prototype.onRemove = function () {
 Tooltip.prototype.hide = function () {
     if (this.div_) {
         this.div_.style.visibility = "hidden";
+        this.div_before_.style.visibility = "hidden";
     }
 }
 
 Tooltip.prototype.show = function () {
     if (this.div_) {
         this.div_.style.visibility = "visible";
+        this.div_before_.style.visibility = "visible";
     }
 }

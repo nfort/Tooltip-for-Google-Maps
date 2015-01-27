@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="46px" height="54px" viewBox="0 0 46 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
+    <title>airport</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop" sketch:type="MSArtboardGroup" transform="translate(-380.000000, -406.000000)">
+            <g id="airport" sketch:type="MSLayerGroup" transform="translate(380.000000, 406.000000)">
+                <path d="M44.8768224,41.0563144 C47.4719996,35.4909389 42.4714767,30.4907991 35.3156241,27.1539702 C28.1597714,23.8171413 18.1556599,24.6048358 15.5604827,30.1702113 C12.9653055,35.7355867 14.9604683,44.1745771 20.2226542,54 C32.3297442,51.4699407 42.2816452,46.6216898 44.8768224,41.0563144 Z" id="Path" fill-opacity="0.8" fill="#6D6D6D" sketch:type="MSShapeGroup"></path>
+                <path d="M40,19.5515074 C40,8.77347746 31.045695,0.0361578526 20,0.0361578526 C8.954305,0.0361578526 0,8.77347746 0,19.5515074 C0,30.3295374 7.51903045,42.273738 20,54 C33.8546675,40.9946915 40,30.3295374 40,19.5515074 Z" id="Oval-1" fill="#FFA701" sketch:type="MSShapeGroup"></path>
+                <path d="M8.75,31.3974365 L9.4322654,29.711354 L12.9057004,30.8870194 L18.8815951,23.7424908 L10.5382179,17.9583094 L11.8861456,16.3627636 L23.8474665,17.8605559 L29.0457816,13.2382625 L31.25,13.1578947 L31.0037203,14.9387784 L26.7465564,20.040326 L29.0224142,32.8217498 L28.0090087,34.7568083 L22.2597159,25.3616549 L14.4079756,31.9855972 L15.9855799,36.0863204 L14.3326467,36.8421053 L8.75,31.3974365 Z" id="Path-3" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>
